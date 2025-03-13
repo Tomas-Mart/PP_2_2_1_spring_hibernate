@@ -27,11 +27,12 @@ public class Car {
         this.series = series;
     }
 
-    // Геттеры и сеттеры
+    @SuppressWarnings("unused")
     public Long getId() {
         return id;
     }
 
+    @SuppressWarnings("unused")
     public void setId(Long id) {
         this.id = id;
     }
@@ -40,6 +41,7 @@ public class Car {
         return model;
     }
 
+    @SuppressWarnings("unused")
     public void setModel(String model) {
         this.model = model;
     }
@@ -48,14 +50,17 @@ public class Car {
         return series;
     }
 
+    @SuppressWarnings("unused")
     public void setSeries(int series) {
         this.series = series;
     }
 
+    @SuppressWarnings("unused")
     public User getUser() {
         return user;
     }
 
+    @SuppressWarnings("unused")
     public void setUser(User user) {
         this.user = user;
     }
