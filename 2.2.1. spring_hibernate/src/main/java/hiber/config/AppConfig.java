@@ -46,6 +46,8 @@ public class AppConfig {
         Properties props = new Properties();
         props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+        props.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
+        props.put("hibernate.format_sql", "true");
 
         factoryBean.setHibernateProperties(props);
         factoryBean.setAnnotatedClasses(User.class, Car.class);
